@@ -14,7 +14,6 @@
 * препроцессор SCSS
 * Gulp 
 * HTML 
-* CSS 
 * JS
 
 
