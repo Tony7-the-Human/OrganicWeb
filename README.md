@@ -1,13 +1,21 @@
 ## :pushpin: Organic
 
 ### :link: [frontendblok.com](https://frontendblok.com/)
+___
+### :computer: Учебный проект по верстке сайта в рамках курса 
+### "ПРОДВИНУТЫЙ КУРС ПО ВЕРСТКЕ 3.0" 
+___
+#### :tired_face: Головоломка:
 
-### :computer: Учебный проект по верстке сайта в рамках курса "ПРОДВИНУТЫЙ КУРС ПО ВЕРСТКЕ 3.0" 
-
+- Сверстать сайт (интернет-магазин) по макету Photoshop | HTML, SCSS, VS Code
+___
 #### :memo: Описание проекта: 
 
 - Верстка интернет-магазина органической еды Healthly food
- 
+___ 
+
+#### :thumbsup: Что получилось в итоге: 
+___ 
 #### :rocket: Технологии и Особенности
 
 * именование классов по [БЭМ](https://ru.bem.info/)
@@ -16,7 +24,7 @@
 * HTML 
 * JS
 
-
+___
 #### :envelope: Контакты
 * ВКонтакте: [@antonprostiakov](https://vk.com/tony7_the_human)
 * Telegram: [@antonprostiakov](https://t.me/Tony7_The_Human)
