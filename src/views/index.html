@@ -440,42 +440,37 @@
     </section>
     <!-- /section delivery -->
     <!-- section contacts -->
-    <!-- <section class="section-contacts">
+    <section class="section-contacts">
         <div class="wrapper">
-
             <div class="contacts">
                 <div class="contacts-item">
                     <h2 class="title">Не смогли <br><span>определиться?</span></h2>
                     <div class="ml">
                         <p class="contacts__text">Если у вас остались вопросы, вы можете задать отправить нам ваши данные. Наши менеджеры свяжутся с вами в течении рабочего дня.</p>
-
                         <ul class="contacts-list">
-                            <li class="contacts-list__item"><a class="contacts-list__tel" href="tel:+7945425555" class="contacts__tel">+7 945 342 55 55</a></li>
-                            <li class="contacts-list__item"><a class="contacts-list__phone" href="mailto:healthlyfood@mail.ru" class="contacts__mail">healthlyfood@mail.ru</a></li>
+                            <li class="contacts-list__item contacts-list__tel"><a class="contacts-list__link" href="tel:+7945425555">+7 945 342 55 55</a></li>
+                            <li class="contacts-list__item contacts-list__email"><a class="contacts-list__link" href="mailto:healthlyfood@mail.ru" class="contacts__mail">healthlyfood@mail.ru</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="contacts-item">
-
-                    <div class="contacts-form">
-                        <h4 class="form-title">Свяжитесь с нами</h4>
-                        <form action="" class="form">
-                            <p class="form__name">Ваше имя</p>
-                            <input type="text" placeholder="Ваше имя" name="name" class="form-input">
-                            <p class="form__tel">Ваш телефон</p>
-                            <input type="tel" placeholder="Ваш телефон" name="tel" class="form-input">
-                        </form>
+                    <form class="form">
+                        <h3 class="form__title">Свяжитесь с нами</h3>
+                        <label for="" class="form__label">Ваше имя</label>
+                        <input type="text" placeholder="Ваше имя" name="name" class="form__input">
+                        <label for="" class="form__label">Ваш телефон</label>
+                        <input type="tel" placeholder="Ваш телефон" name="tel" class="form__input">
                         <button class="slider-footer__btn btn">заказать звонок</button>
-                        <p class="form-data"> Нажимая на кнопку вы подтверждаете свое согласие на обработку персональных данных.</p>
-                    </div>
-
+                        <p class="form__text"> Нажимая на кнопку вы подтверждаете свое согласие на обработку <a class="form__link" href="#">персональных данных</a>.</p>
+                    </form>
                 </div>
             </div>
+            @@include("../blocks/modules/footer/footer.html")
     </section> -->
     <!-- /section contacts -->
 
 
-    @@include("../blocks/modules/footer/footer.html")
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
