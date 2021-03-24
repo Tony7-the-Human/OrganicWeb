@@ -1,0 +1,114 @@
+.footer {
+    border-top: 1px solid $gray;
+    padding-top: 82px;
+    padding-bottom: 80px;
+    .logo {
+        width: 179px;
+        height: 48px;
+        background-size: contain;
+        margin-top: -133px;
+    }
+}
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 66%;
+        margin-bottom: 33px;
+    }
+}
+
+.box-footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.box-footer-list {
+    list-style-type: none;
+    transition: 0.2s ease;
+    &__item {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:hover {
+            color: $orange;
+        }
+    }
+    &__link {
+        color: $gray;
+        font-size: 1.12rem;
+        text-align: left;
+        text-decoration: none;
+        transition: 0.2s ease;
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+
+.tel {
+    color: $gray;
+    font-size: 1.68rem;
+}
+
+.box-footer-info:nth-child(2) {
+    margin-right: 33px;
+}
+
+.box-footer-social {
+    list-style-type: none;
+    margin-top: 30px;
+    &__item {}
+    &__link {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid $gray;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+    }
+    &__vk {
+        background-size: 23px 14px;
+        background-image: url(../../../img/vk.svg);
+    }
+    &__inst {
+        background-size: 18px 18px;
+        background-image: url(../../../img/instagram.svg);
+    }
+    &__fb {
+        background-size: 18px 18px;
+        background-image: url(../../../img/facebook.svg);
+    }
+}
+
+.box-copyright {
+    // .box-copyright__copy
+    &__copy {
+        opacity: 0.6;
+        color: $gray;
+    }
+    // .box-copyright__text
+    &__text {
+        opacity: 0.6;
+        color: $gray;
+    }
+    // .box-copyright__link
+    &__link {
+        text-decoration: none;
+        color: $gray;
+    }
+}
