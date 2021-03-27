@@ -8,6 +8,16 @@
     padding-bottom: 46px;
     padding-left: 15px;
     padding-right: 15px;
+    @media (max-width: 1440px) {
+        max-width: 1140px;
+    }
+    @media (max-width: 1200px) {
+        max-width: 960px;
+        padding-bottom: 65px;
+    }
+    @media (max-width: 990px) {
+        max-width: 100%;
+    }
     &-item {
         display: flex;
         justify-content: space-between;
@@ -19,8 +29,39 @@
         transition: 0.3s ease;
         font-weight: 500;
         letter-spacing: 0.075rem;
+        @media (max-width: 990px) {
+            text-indent: -9999px;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: transparent;
+            border: 1px solid $gray;
+            background-size: 1rem 0.87rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 100%;
+            background-image: url(../../../img/tel.svg);
+        }
         &:hover {
             color: $orange;
+        }
+    }
+    &__menu {
+        @media (min-width: 991px) {
+            display: none;
+        }
+        @media (max-width: 990px) {
+            display: block;
+            text-indent: -9999px;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: transparent;
+            border: 1px solid $gray;
+            background-size: 1rem 0.87rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 100%;
+            background-image: url(../../../img/menu.svg);
+            margin-left: 20px;
         }
     }
 }
@@ -30,6 +71,12 @@
     width: 2.5rem;
     height: 2.5rem;
     margin-left: 80px;
+    @media (max-width: 1440px) {
+        margin-left: 40px;
+    }
+    @media (max-width: 1200px) {
+        margin-left: 20px;
+    }
     &__button {
         width: 2.5rem;
         height: 2.5rem;
@@ -42,6 +89,11 @@
         background-position: center center;
         cursor: pointer;
         transition: 0.3s ease;
+        @media (max-width: 990px) {
+            background-color: transparent;
+            border: 1px solid $gray;
+            background-image: url(../../../img/cart-black.svg);
+        }
         &:hover {
             background-color: $gray;
         }
@@ -52,6 +104,9 @@
         right: 9px;
         font-size: 0.5rem;
         color: $white;
+        @media (max-width: 990px) {
+            color: $gray;
+        }
     }
 }
 
@@ -59,9 +114,24 @@
     display: block;
     background-repeat: no-repeat;
     background-image: url(../../../img/logo.svg);
-    width: 120px;
+    width: 127px;
     height: 32px;
-    margin-right: 120px;
+    margin-right: 83px;
+    @media (max-width: 1440px) {
+        margin-right: 50px;
+    }
+    @media (max-width: 1200px) {
+        margin-right: 32px;
+    }
+    @media (max-width: 576px) {
+        margin-right: 16px;
+    }
+}
+
+nav {
+    @media (max-width: 990px) {
+        display: none;
+    }
 }
 
 .nav {
@@ -70,11 +140,18 @@
     justify-content: space-between;
     &-item {
         margin-right: 48px;
+        @media (max-width: 1440px) {
+            margin-right: 30px;
+        }
+        @media (max-width: 1200px) {
+            margin-right: 16px;
+        }
     }
     &-link {
         text-decoration: none;
         color: $gray;
         transition: 0.3s ease;
+        padding: 0;
         &:hover {
             color: $orange;
         }
