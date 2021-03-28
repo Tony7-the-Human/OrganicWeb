@@ -8,7 +8,10 @@
         background-size: contain;
         margin-top: 9px;
         @media (max-width: 990px) {
-            margin-bottom: 28px;
+            margin: 0px auto 28px auto;
+        }
+        @media (max-width: 767px) {
+            margin: 0px auto 28px auto;
         }
     }
 }
@@ -17,6 +20,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: 990px) {
+        display: block;
+        text-align: center;
+    }
     &-item {
         display: flex;
         justify-content: space-between;
@@ -24,6 +31,12 @@
         margin-bottom: 33px;
         @media (max-width: 1200px) {
             flex: 0 0 72%;
+        }
+        @media (max-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
         }
     }
 }
@@ -45,13 +58,13 @@
 .box-footer-list {
     list-style-type: none;
     transition: 0.2s ease;
+    @media (max-width: 768px) {
+        margin-bottom: 35px;
+    }
     &__item {
         margin-bottom: 30px;
         &:last-child {
             margin-bottom: 0;
-        }
-        &:hover {
-            color: $orange;
         }
     }
     &__link {
@@ -74,6 +87,9 @@
 
 .box-footer-info:nth-child(2) {
     margin-right: 33px;
+    @media (max-width: 768px) {
+        margin-right: 0;
+    }
 }
 
 .box-footer-social {
@@ -106,6 +122,18 @@
 }
 
 .box-copyright {
+    @media (max-width: 990px) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
     // .box-copyright__copy
     &__copy {
         opacity: 0.6;
@@ -115,6 +143,9 @@
     &__text {
         color: #a6a8a4;
         position: relative;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     }
     // .box-copyright__link
     &__link {
