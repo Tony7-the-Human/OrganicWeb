@@ -424,6 +424,7 @@ ul {
 
 .header__tel:hover {
   color: #d26a22;
+  text-decoration: none;
 }
 
 .header-cart {
