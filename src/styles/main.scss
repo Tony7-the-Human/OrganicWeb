@@ -402,23 +402,23 @@
             bottom: 2.75rem;
             left: 2.25rem;
             max-width: 58%;
-            transform: translate(0, 244px);
+            transform: translate(0, 277px);
             transition: 0.3s ease;
             @media (max-width: 1440px) {
                 transform: translate(0, 255px);
                 max-width: 80%;
             }
             @media (max-width: 1200px) {
-                transform: translate(0, 205px);
+                transform: translate(0, 227px);
             }
             @media (max-width: 990px) {
-                transform: translate(0, 244px);
+                transform: translate(0, 277px);
             }
             @media (max-width: 767px) {
-                transform: translate(0, 199px);
+                transform: translate(0, 201px);
             }
             @media (max-width: 576px) {
-                transform: translate(0, 0);
+                transform: translate(0, 18px);
             }
             &__title {
                 font-size: 1.8rem;
@@ -1299,8 +1299,24 @@
         }
     }
     
-    .modal-dialog {
-        max-width: 100%;
+    // .modal-dialog {
+    //     max-width: 100%;
+    // }
+    .modal-body {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#fff, $alpha: 0.8);
+        &::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+        }
     }
     
     .modal-nav {
