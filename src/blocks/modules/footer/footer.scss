@@ -58,8 +58,30 @@
 .box-footer-list {
     list-style-type: none;
     transition: 0.2s ease;
+    &__list {
+        @media (max-width: 576px) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+    &__list>li {
+        @media (max-width: 576px) {
+            margin: 0 16px 0 16px;
+        }
+    }
+    &__list>li>a {
+        @media (max-width: 767px) {
+            font-size: 1.12rem;
+        }
+    }
+    &__list>li>a {
+        @media (max-width: 400px) {
+            font-size: 0.75rem;
+        }
+    }
     @media (max-width: 768px) {
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
     &__item {
         margin-bottom: 30px;
@@ -73,6 +95,11 @@
         text-align: left;
         text-decoration: none;
         transition: 0.2s ease;
+        &__mail {
+            @media (max-width: 400px) {
+                font-size: 0.75rem;
+            }
+        }
         &:hover {
             color: $orange;
         }
