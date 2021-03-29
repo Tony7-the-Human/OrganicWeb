@@ -358,6 +358,11 @@
             @media (max-width: 990px) {
                 min-height: 520px;
             }
+            @media (max-width: 576px) {
+                min-height: 240px;
+                width: 280px;
+                margin: 0 auto;
+            }
             &:hover {
                 box-shadow: 0 0 0 2px rgba($gray, $alpha);
             }
@@ -389,13 +394,25 @@
             }
         }
         &-milk {
-            background-image: url(../img/stock/milk.png)
+            background-image: url(../img/stock/milk.png);
+            @media (max-width: 576px) {
+                background-size: 124px 140px;
+                background-position: 35% 0%;
+            }
         }
         &-bakaley {
-            background-image: url(../img/stock/pasta.png)
+            background-image: url(../img/stock/pasta.png);
+            @media (max-width: 576px) {
+                background-size: 124px 140px;
+                background-position: 35% 0%;
+            }
         }
         &-steaks {
-            background-image: url(../img/stock/steaks.png)
+            background-image: url(../img/stock/steaks.png);
+            @media (max-width: 576px) {
+                background-size: 124px 140px;
+                background-position: 45% 0%;
+            }
         }
         &-text {
             position: absolute;
@@ -424,6 +441,11 @@
                 font-size: 1.8rem;
                 font-family: 'Cormorant', serif;
                 margin-bottom: 26px;
+                @media (max-width: 576px) {
+                    font-size: 1.3rem;
+                    margin-bottom: 26px;
+                    text-align: center;
+                }
             }
             &__description {
                 color: rgba($gray, 0.7);
@@ -459,6 +481,12 @@
                     width: 1.875rem;
                     height: 1.875rem;
                     background-image: url(../img/plus.svg);
+                    @media (max-width: 576px) {
+                        left: 20px;
+                        top: calc(50% - 0.625rem);
+                        width: 1.25rem;
+                        height: 1.25rem;
+                    }
                 }
             }
         }
@@ -531,7 +559,7 @@
         cursor: pointer;
         border: none;
         @media (max-width: 1440px) {
-            padding: 1rem 1.8rem;
+            padding: 1rem 1.4rem;
             margin: 0 5px;
         }
     }
@@ -856,6 +884,10 @@
                 text-align: center;
             }
             @media (max-width: 767px) {
+                flex: 0 0 48%;
+                text-align: center;
+            }
+            @media (max-width: 576px) {
                 flex: 0 0 100%;
                 text-align: center;
             }
@@ -935,6 +967,10 @@
             margin-bottom: 0;
             min-height: 52px;
             max-width: 96%;
+            @media (max-width: 767px) {
+                min-height: 76px;
+                max-width: 100%;
+            }
         }
         &__price {
             font-size: 1.5rem;
@@ -991,7 +1027,7 @@
             width: 30px;
             text-align: center;
             @media (max-width: 1440px) {
-                width: 25px;
+                width: 30px;
             }
         }
         &__minus {
