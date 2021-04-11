@@ -16,7 +16,7 @@ ___
 
 #### :thumbsup: Что получилось в итоге: 
 
-[Healthly food](https://tony7-the-human.github.io/OrganicWeb/)
+[Healthly food](http://tony7.beget.tech/Organic/index.html)
 ___ 
 #### :rocket: Технологии и Особенности
 
